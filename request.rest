@@ -1,0 +1,31 @@
+
+//belum bisa mendapatkan datanya 
+GET http://localhost:5000/users 
+Authorization: Bearer 
+
+###
+POST http://localhost:5000/users 
+Content-Type: application/json
+
+{
+    "name": "M Fauzan Alfarisi ZA",
+    "email": "zan@gmail.com",
+    "password": "12345",
+    "confPassword": "12345"
+}
+
+
+###
+POST http://localhost:5000/login 
+Content-Type: application/json
+
+{
+    "email" : "zan@gmail.com",
+    "password": "12345"
+}
+
+###
+GET  http://localhost:5000/token
+
+###
+DELETE http://localhost:5000/logout
